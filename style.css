@@ -1,0 +1,523 @@
+/* ------------------------------------------------------------ GENERAL ------------------------------------------------------------ */
+
+/* TITRES */
+
+h1 { /* headlines, titres des pages */
+    color: black !important;
+    font-family: "Lexend Mega" !important;
+    font-size: 44px !important;
+    font-style: normal !important;
+    font-weight: 700 !important;
+    line-height: normal !important;
+    text-transform: uppercase !important;
+}
+
+h2:not(.entry-title) { /* section titles, titres des sections */
+    color: black !important;
+    font-family: "Lexend Mega" !important;
+    font-size: 28px !important;
+    font-style: normal !important;
+    font-weight: 700 !important;
+    line-height: 1.5em !important;
+    text-underline-offset: 0.3em !important;
+	margin-bottom: 24px !important;
+}
+
+h3, h2.entry-title, h2.woocommerce-loop-product__title { /* titres et titres des articles */
+    color: black !important;
+    font-family: "Lexend Mega" !important;
+    font-size: 22px !important;
+    font-style: normal !important;
+    font-weight: 700 !important;
+    line-height: normal !important;
+	text-transform: none !important;
+}
+
+h4 { /* autres petits titres */
+    color: black !important;
+    font-family: "Lexend Mega" !important;
+    font-size: 16px !important;
+    font-style: normal !important;
+    font-weight: 700 !important;
+    line-height: normal !important;
+	text-transform: none !important;
+}
+
+p {
+    color: black !important;
+    font-family: "Public Sans", Roboto, sans-serif !important;
+    font-size: 16px !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    line-height: 1.6em !important;
+}
+
+@media only screen and (max-width: 766px) {
+	h1 {
+		font-size: 34px !important;
+	}
+	h2:not(.entry-title) {
+		font-size: 24px !important;
+		margin-bottom: 12px !important;
+	}
+	h3, h2.entry-title {	
+		font-size: 18px !important;
+	}
+	h4 {
+		font-size: 14px !important;
+	}
+	p {
+		font-size: 14px !important;
+	}
+}
+
+/* SECTIONS */
+
+.elementor-section {
+	max-width: 100% !important;
+}
+
+
+/* COLONNES */
+
+.elementor-section .elementor-column > .elementor-element-populated {
+    padding: 48px;
+}
+
+@media only screen and (max-width: 766px) {
+	.elementor-section .elementor-column > .elementor-element-populated {
+    	padding: 24px;
+	}
+}
+
+/* BANNIÈRE */
+
+.elementor-section.elementor-element-71e4250, .elementor-section.elementor-element-64a96c4, section.ast-archive-entry-banner {
+	background-position: top 0% left 0%;
+	background-size: cover;
+	border-top: 2px solid;
+	border-bottom: 2px solid;
+}
+
+.elementor-section.elementor-element-71e4250 {
+	background-image: url("https://accolade.gregoire-nieto.fr/wp-content/uploads/2023/08/header-a-propos.svg");
+}
+
+.elementor-section.elementor-element-64a96c4 {
+    background-image: url("https://accolade.gregoire-nieto.fr/wp-content/uploads/2023/08/header-contact.svg");
+}
+
+body.blog section.ast-archive-entry-banner {
+    background-image: url("https://accolade.gregoire-nieto.fr/wp-content/uploads/2023/08/header-actualite.svg");
+}
+
+body.post-type-archive-product section.ast-archive-entry-banner {
+    background-image: url("https://accolade.gregoire-nieto.fr/wp-content/uploads/2023/08/header-catalogue.svg");
+}
+
+.elementor-section.elementor-element-71e4250 .elementor-column > .elementor-element-populated, 
+.elementor-section.elementor-element-64a96c4 .elementor-column > .elementor-element-populated {
+	padding-top: 200px !important;
+	padding-bottom: 200px !important;
+}
+
+@media only screen and (max-width: 766px) {	
+	.elementor-section.elementor-element-71e4250 .elementor-column > .elementor-element-populated,
+	.elementor-section.elementor-element-64a96c4 .elementor-column > .elementor-element-populated {
+		padding-top: 48px !important;
+		padding-bottom: 48px !important;
+	}
+}
+
+/* MENU */
+
+li.menu-item a {
+    font-family: Lexend Mega !important;
+    font-size: 16px !important;
+    font-weight: 400 !important;
+	line-height: 40px !important;
+}
+
+li.menu-item a:active, li.menu-item a:focus {
+	color: #4AA3DF !important;
+}
+
+/* MAIN MENU */
+
+#primary-site-navigation-desktop li.menu-item a {
+	color: black !important;
+}
+
+/* FOOTER */
+
+#footer-site-navigation li.menu-item a {
+	color: white !important;
+}
+
+.site-above-footer-wrap {
+	background: #333 !important;
+	padding: 48px;
+}
+
+
+@media only screen and (max-width: 766px) {
+	.site-above-footer-wrap {
+		padding: 24px;
+	}
+}
+
+.footer-panel * {
+	color: #fff !important;
+}
+
+.footer-panel i {
+	font-size: 16px;
+	margin-right: 12px;
+	vertical-align: baseline;
+}
+
+.footer-panel h4 {
+	margin-bottom: 20px;
+}
+
+.footer-panel .reseaux-sociaux {
+	display: flex;
+	justify-content: center;
+}
+
+.footer-panel .reseaux-sociaux i {
+	font-size: 32px;
+}
+
+.site-below-footer-wrap {
+	background: #000 !important;
+	padding: 24px;
+}
+
+.site-below-footer-wrap a {
+	color: #fff !important;
+}
+
+/* TEXTAREA */
+
+input, textarea {
+	border-radius: 12px !important;
+}
+
+/* BOUTONS */
+
+input.wpcf7-submit, button, input.submit, a.elementor-button, a.button {
+
+	color: black !important;
+	border: 2px solid black !important;
+	border-radius: 12px !important;
+	background-color: white !important;
+}
+
+a.button:hover {
+	background-color: #4AA3DF !important;
+	color: white !important;
+}
+
+a.button.added {
+	background-color: #4AA3DF !important;
+}
+
+a.button.checkout-button:hover, a.button.wc-forward:hover {
+	background-color: #8FB339 !important;
+}
+
+input.wpcf7-submit:hover, button:hover, input.submit:hover, a.elementor-button:hover, a.button:hover {
+
+	transform: translate3d(-4px, -4px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg); transform-style: preserve-3d;
+	box-shadow: 4px 4px 0px 0px #000 !important;
+}
+
+/* LIENS ET META */
+
+a, a > span {
+	color: #4AA3DF !important;
+}
+
+a.elementor-button > span {
+	color: black !important;
+}
+
+/* SLIDER */
+
+figure.swiper-slide-inner {
+	background: #fff;
+	padding: 8px;
+	border: solid black 2px;
+	border-radius: 20px;
+	width: 90%;
+	max-width: 316px !important;
+	margin: auto !important;
+}
+
+figcaption.elementor-image-carousel-caption {
+	display: none;
+}
+
+img.swiper-slide-image {
+	border-radius: 12px;
+	transition: opacity 0.2s ease-in-out;
+}
+
+figure.swiper-slide-inner:hover img.swiper-slide-image {
+	opacity: 10%;
+	transition: opacity 0.2s ease-in-out;
+}
+
+figure.swiper-slide-inner:hover figcaption.elementor-image-carousel-caption {
+	display: block;
+	position: absolute;
+	top: 18px;
+	left: 50%;
+	transform: translate(-50%, 0);
+	width: 75%;
+	max-width: 280px !important;
+}
+
+figure.swiper-slide-inner:hover figcaption.elementor-image-carousel-caption p {
+	text-align: justify !important;
+}
+
+figure.swiper-slide-inner:hover figcaption.elementor-image-carousel-caption h3,
+figure.swiper-slide-inner:hover figcaption.elementor-image-carousel-caption h4 {
+	text-align: start !important;
+}
+
+figure.swiper-slide-inner:hover figcaption.elementor-image-carousel-caption a {
+	text-decoration: underline black 2px;
+}
+
+.elementor-swiper-button {
+	color: black !important;
+	transform: translateY(-50%) !important;
+}
+
+.elementor-swiper-button-prev {
+	left: -10px !important;
+}
+
+.elementor-swiper-button-next {
+	right: -10px !important;
+}
+
+/* ------------------------------------------------------------ CONTACT ------------------------------------------------------------ */
+
+.elementor-section.elementor-element-33aad262 {
+	background: #E9ECEF;
+	border-bottom: 2px solid;
+}
+
+/* ------------------------------------------------------------ A PROPOS ----------------------------------------------------------- */
+
+.elementor-section.elementor-element-60c2f9f {
+	background: #E9ECEF;
+	border-bottom: 2px solid;
+}
+
+.elementor-widget-google_maps {
+    padding: 8px;
+	border: 2px solid black;
+	border-radius: 20px;
+	background-color: white;
+}
+
+.elementor-widget-google_maps .elementor-widget-container {
+    border-radius: 12px;
+}
+
+.elementor-section.elementor-element-69631f4 {
+	background: #F5CB5C;
+	border-bottom: 2px solid;
+}
+
+/* ----------------------------------------------------------- ACTUALITE ----------------------------------------------------------- */
+
+/* BANNIERE (CAS SPECIFIQUE CAR THEME ASTRA) */
+
+section.ast-archive-entry-banner {
+	background-color: white !important;
+}
+
+section.ast-archive-entry-banner > .ast-container { 
+	max-width: 1140px !important;
+	text-align: left;
+	padding: 200px 48px !important;
+}
+
+@media only screen and (max-width: 766px) {
+	section.ast-archive-entry-banner > .ast-container { 
+		padding: 48px 24px !important;
+	}
+}
+
+/* SECTIONS PRINCIPALES ET SECONDAIRES (CAS SPECIFIQUE CAR THEME ASTRA) */
+
+.blog #content .ast-container { /* container global de la page (stack article + panneau latéral) */
+	max-width: 1140px !important;
+}
+
+@media only screen and (min-width: 922px) {
+	.blog #primary {
+		width: 65% !important;
+		padding: 0 48px !important;
+	}
+
+	.blog #secondary {
+		width: 35% !important;
+	}
+}
+
+.blog #secondary {
+	background-color: #E9ECEF !important;
+	padding: 48px 40px 48px 40px !important;
+	margin: 0 !important;
+}
+
+@media only screen and (max-width: 922px) {
+	.blog #primary {
+    	padding: 0 24px !important;
+	}
+
+	.blog #secondary {
+    	padding: 24px !important;
+	}
+}
+
+/* ARTICLE */
+
+.blog #primary article {
+	padding: 48px 0 !important;
+	border-bottom: 2px solid black;
+}
+
+.blog #primary article .ast-post-format- {
+	padding-bottom: 0 !important;
+}
+
+@media only screen and (max-width: 766px) {
+	.blog #primary article  {
+    	padding: 24px 0 !important;
+	}
+}
+
+.blog #primary article .ast-post-format- .ast-blog-featured-section.post-thumb {
+	float: none;
+	padding: 8px;
+  	border: 2px solid black;
+  	border-radius: 20px;
+  	background-color: white;
+}
+
+.blog #primary article .ast-post-format- .post-thumb img {
+	width: 100%;
+	object-fit: cover;
+	object-position: center;
+	height: 300px;
+	border-radius: 12px;
+}
+
+/* ----------------------------------------------------------- PAGE D'ARTICLE ----------------------------------------------------------- */
+
+body.single-post article, body.single-post .nav-links, body.single-post .comment-respond {
+	max-width: 1140px !important;
+	padding: 48px !important;
+	margin: auto !important;
+}
+
+@media only screen and (max-width: 766px) {
+	body.single-post article, body.single-post .nav-links, body.single-post .comment-respond {
+		padding: 24px !important;
+	}
+}
+
+body.single-post .comments-area {
+	margin-bottom: 0 !important;
+}
+
+body.single-post article .entry-content {
+	margin: 0 !important;
+}
+
+body.single-post article .elementor-section .elementor-column > .elementor-element-populated {
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+	padding-bottom: 0 !important;
+}
+
+body.single-post img.attachment-large {
+	width: 100%;
+	object-fit: cover;
+	object-position: center;
+	height: 500px;
+}
+
+body.postid-1100.single-post img.attachment-large {
+	object-position: bottom;
+}
+
+body.single-post nav.navigation {
+	max-width: 100% !important;
+	background-color: #E9ECEF;
+	padding: 0 !important;
+}
+
+body.single-post nav.navigation a {
+	padding: 0 !important;
+}
+
+body.single-post .comments-area {
+	max-width: 100% !important;
+	background-color: #F5CB5C;
+	padding: 0 !important;
+}
+
+body.single-post .ast-comment-formwrap {
+	padding: 0 !important;
+}
+
+h3#reply-title {
+	margin-bottom: 24px !important;
+}
+
+/* ----------------------------------------------------------- ACCUEIL ----------------------------------------------------------- */
+
+/* Témoignages */
+
+.elementor-column.avis .elementor-element-populated {
+	border: black solid 2px !important;
+	border-radius: 12px !important;
+	box-shadow: 4px 4px 0px 0px #000 !important;
+	margin: 24px !important;
+	padding: 24px !important;
+	background-color: white;
+}
+
+.elementor-column.avis.elementor-element-e3ed761 .elementor-element-populated,
+.elementor-column.avis.elementor-element-477233a .elementor-element-populated {
+	margin-left: 0 !important;
+}
+
+.elementor-column.avis.elementor-element-859deaa .elementor-element-populated,
+.elementor-column.avis.elementor-element-b1fe981 .elementor-element-populated {
+	margin-right: 0 !important;
+}
+
+/* FAQ */
+
+.elementor-accordion-item {
+
+	border: 2px solid black !important;
+	border-radius: 12px;
+	box-shadow: 4px 4px 0px 0px #000 !important;
+	margin-bottom: 20px;
+	background-color: white !important;
+}
+
+a.elementor-accordion-title {
+	text-decoration: none !important;
+}
